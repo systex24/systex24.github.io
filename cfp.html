@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SysTEX 2024</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+         <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="committee.html">Committee</a></li>
+		<li><a href="program.html">Program</a></li>
+        <li class="active"><a href="cfp.html">Call for Papers</a></li>
+		<!--<li><a href="https://www.sigops.org/sosp/sosp17/">Registration</a></li>-->
+		<li><a href="https://systex.cs.fau.de/systex23/">Previous Edition</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>SysTEX '24</h1>
+  <p>7th Workshop on System Software for Trusted Execution  (SysTEX 2024)</p> 
+  <p><b>July 8th, 2024</b></p> 
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+
+        <h3>Important dates</h3>
+        <p>All deadlines are <a href="https://www.timeanddate.com/time/zones/aoe">Anywhere on Earth (AoE = UTC-12h)</a>.</p>
+        <div class="table-responsive">
+          <table class="table table-hover table-condensed">
+            <tbody>
+              <tr class="warning">
+                <td>TBA (23:59 AoE)</td>
+                <td>Paper submission</td>
+              </tr>
+              <tr>
+                <td>TBA</td>
+                <td>Notification of acceptance</td>
+              </tr>
+              <tr>
+                <td>July 8, 2024</td>
+                <td>Workshop</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      <h3>Call for Papers</h3>
+      <!--       <h4><a href="./docs/CFP-SysTEX2019.txt">Text-only version of the CFP</a></h4> -->
+
+       <p>
+        The 7th Workshop on System Software for Trusted Execution (SysTEX) will focus on research challenges related to Trusted Execution Environments (TEEs) and explore new ideas and strategies for implementing trustworthy systems with TEEs. The workshop aims to foster collaboration and discussion among researchers and practitioners in this field. In recent years all major hardware manufacturers have developed some form of TEE support, making this technology widely available in consumer devices today, e.g., Intel SGX, AMD SEV-SNP, ARM TrustZone, IBM Z and PEF. These TEE primitives enable fine-grained and flexible trusted execution, but also introduce numerous novel challenges and opportunities for developers of secure applications. Hence, there is a burning need for cross-cutting systems support and security analysis of such TEEs that span all the layers of the software stack, from the OS through runtime to compilers, programming models, and novel applications. Furthermore, several new TEE extensions, such as Intel TDX, ARM Morello and CCA, NVIDIA Confidential Computing, will soon be available in the market, further pushing the research field of trusted execution. The workshop will also invite discussion on the challenges and opportunities for emerging TEE technologies, such as RISC-V's Keystone and Microsoft's Pluton, and the integration of TEE-based solutions with pervasive 5G networks, IoT, and AI applications.
+        </p>
+       <p>Topics of interest include but are not limited to:</p>
+
+       <ul>
+        <li>Architecture, applications, and implementation technologies for trusted platforms and trustworthy infrastructures</li>
+        <li>Limitations of trusted computing</li>
+        <li>Validation and performance evaluation of trusted hardware</li>
+        <li>Side-channel attacks and defenses for TEEs</li>
+        <li>Formal verification of TEE architectures, attestation protocols, and software</li>
+        <li>Cryptographic aspects of trusted and trustworthy computing</li>
+        <li>Privacy aspects of trusted computing</li>
+        <li>Secure OS and virtualization support for trusted execution</li>
+        <li>Cross-platform standardization of TEEs and interoperability issues</li>
+        <li>Heterogeneous confidential computing across TEEs</li>
+        <li>Energy-efficient trusted computing for sustainable infrastructures</li>
+        <li>Trusted I/O virtualization</li>
+        <li>TEE support for hardware accelerators</li>
+        <li>Usability and user perceptions of trustworthy systems and risks</li>
+        <li>Use case studies of trusted execution</li>
+        <li>Intrusion resilience in trusted computing</li>
+        <li>Emerging challenges in integrating TEEs with 5G and edge networks</li>
+    </ul>    
+
+
+      <h3>Format of the workshop</h3>
+      <p>
+        SysTEX is a well-established, mature workshop that has been successfully organized six times. The goal of the workshop is to foster collaboration and discussion to encourage and advance innovative TEE security research. SysTEX has a particularly strong track record of attracting submissions from both industry and academia and encouraging intersection and cross-pollination of ideas in the systems and security fields, a natural fit for TEE research.
+        </p>
+        
+        <p>
+        The workshop will be one full day. The program will primarily include original research presentations by authors of accepted papers (the workshop will have proceedings in IEEE Xplore), followed by interactive Q&A with the audience. The workshop may, furthermore, include a relevant keynote speaker.</p>
+
+      <h3>Submission Guidelines </h3>
+
+      <p>In line with the call for papers from previous editions, we invite both original research papers, as well as short research statements to encourage discussion at the workshop (as proven successful in last editions). Furthermore, for the upcoming edition, we want to explicitly recognize the importance of high-quality reusable software and hardware tools to aid research in the fast-changing TEE ecosystem (e.g., reverse-engineering and attack frameworks, binary and compiler defenses, open-source enclave processors).</p>
+
+      <p>Thus, SysTEX welcomes submissions in three formats:</p>
+      
+      <ol>
+          <li><strong>Regular research papers (6 pages)</strong> to describe original work that is not previously published or concurrently submitted elsewhere.</li>
+          <li><strong>Short research statements (1-2 pages)</strong> to encourage discussion and collaboration. Research statements may summarize research published elsewhere or outline new emerging ideas.</li>
+          <li><strong>Tool paper submissions (4 pages)</strong> that describe open-source tools with a (potential for) meaningful impact for security and privacy research on TEEs. These papers will be evaluated based on their potential merit and usability, prioritizing practical value over novelty. Submissions may introduce entirely new tools or present incremental extensions to existing tools.</li>
+      </ol>
+</p>
+
+<p>All submissions should be in PDF and must be typeset in LaTeX in A4 format (not "US Letter") using the IEEE conference proceeding template we supply <a href="https://eurosp2024.ieee-security.org/eurosp2023-template.zip">eurosp2023-template.zip</a> Please do not use other IEEE templates. 
+</p>
+
+<p>Reviewing is single-blind, and the names and affiliations of the authors must appear in the submitted papers. Each paper will receive at least three reviews from members of the program committee. Submissions that do not respect the formatting requirement may be rejected without review.</p>
+
+
+<p>Submissions site: <strong><a href="https://systex24.hotcrp.com">https://systex24.hotcrp.com</a></strong> </p> 
+
+<p></p>
+<br>
+
+<br>
+
+  </div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
